@@ -2,7 +2,6 @@ export PATH=:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.go-modules/bin:/usr
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-export GOPATH=$HOME/.go-modules
 export EDITOR=code
 export LC_ALL=en_US.UTF-8
 
@@ -18,8 +17,8 @@ setopt hist_ignore_all_dups
 ################################################################################
 # oh-my-zsh
 
-plugins=(git node npm github zsh-syntax-highlighting zsh-autosuggestions)
-ZSH_THEME="stefanjudis"
+plugins=(git node npm github z zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search)
+ZSH_THEME="schoenwaldnils"
 
 # Customize history
 HIST_STAMPS="yyyy-mm-dd"

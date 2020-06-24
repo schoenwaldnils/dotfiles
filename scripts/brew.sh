@@ -12,6 +12,7 @@ brew -v >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercont
 
 brew_install_or_upgrade zsh
 brew_install_or_upgrade zsh-completions
+brew_install_or_upgrade zsh-history-substring-search
 
 # set it as default shell
 chsh -s /bin/zsh
@@ -19,12 +20,13 @@ chsh -s /bin/zsh
 brew_install_or_upgrade highlight
 brew_install_or_upgrade jq
 brew_install_or_upgrade bat
-brew_install_or_upgrade autojump
+# brew_install_or_upgrade autojump
+brew_install_or_upgrade z
 brew_install_or_upgrade exa
 brew_install_or_upgrade github/gh/gh
 brew_install_or_upgrade curl
 brew_install_or_upgrade git-delta
-brew_install_or_upgrade go
+# brew_install_or_upgrade go
 brew_install_or_upgrade shellcheck
 
 # ffmpeg for quick video compression
@@ -33,11 +35,11 @@ brew install ffmpeg --with-vorbis --with-libvorbis --with-vorbis --with-theora -
 # *********************************
 # mac app store
 brew_install_or_upgrade mas
-# magnet window management
-mas install 441258766
-# dato
-mas install 1470584107
-# todoist
-mas install 585829637
-# NextDNS
-mas install 1464122853
+
+mas install 937984704 # Amphetamine
+mas install 1116599239 # Nord VPN
+mas install 803453959 # Slack
+mas install 413857545 # Divvy
+mas install 425424353 # The Unarchiver
+mas install 1278508951 # Trello
+mas install 585829637 # Todoist
