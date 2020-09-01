@@ -13,6 +13,7 @@ brew -v >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercont
 brew_install_or_upgrade zsh
 brew_install_or_upgrade zsh-completions
 brew_install_or_upgrade zsh-history-substring-search
+brew_install_or_upgrade zsh-git-prompt
 
 # set it as default shell
 chsh -s /bin/zsh
@@ -24,6 +25,7 @@ brew_install_or_upgrade bat
 brew_install_or_upgrade z
 brew_install_or_upgrade exa
 brew_install_or_upgrade github/gh/gh
+brew_install_or_upgrade git-flow-avh
 brew_install_or_upgrade curl
 brew_install_or_upgrade git-delta
 # brew_install_or_upgrade go

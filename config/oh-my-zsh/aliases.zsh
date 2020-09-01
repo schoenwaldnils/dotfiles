@@ -80,7 +80,7 @@ alias s='git status -s -b'
 alias sf='git fetch -q && git status -s -b'
 alias a='git add'
 # Show the diff between the latest commit and the current state
-alias d = 'git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat'
+alias d='git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat'
 
 # Push local changes to tracked remote branch
 alias p='git push origin'
