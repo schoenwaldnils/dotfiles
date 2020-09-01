@@ -8,6 +8,7 @@
   branches = branch -a
   remotes = remote -v
 
+
   # Amend the currently staged files to the latest commit
   amend = commit --amend --reuse-message=HEAD
 
@@ -26,24 +27,36 @@
   whitespace = fix
 
 [help]
-  autocorrect = 50
+  autocorrect = 1
 
 [core]
 
   # Use custom `.gitignore` and `.gitattributes`
 	excludesfile = /Users/n/.gitignore_global
+  attributesfile = ~/.gitattributes
 
   # Treat spaces before tabs and all kinds of trailing whitespace as an error
   # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
   # [default] trailing-space: looks for spaces at the end of a line
   whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 
+  # Make `git rebase` safer on OS X
+  # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+  trustctime = false
+
+  # Prevent showing files whose names contain non-ASCII symbols as unversioned.
+  # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+  precomposeunicode = false
+	pager = diff-so-fancy | less --tabs=4 -RFX
+
 [diff]
   # Detect copies as well as renames
   renames = copies
+
 [diff "bin"]
   # Use `hexdump` to diff binary files
   textconv = hexdump -v -C
+
 [push]
   # Use the Git 1.x.x default to avoid errors on machines with old Git
   # installations. To use `simple` instead, add this to your `~/.extra` file:
@@ -51,8 +64,10 @@
   default = current
   # Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+
 [clean]
   requireForce = false
+
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
