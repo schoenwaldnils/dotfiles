@@ -95,6 +95,12 @@ alias clone='git clone --recursive'
 # View abbreviated SHA, description, and history graph of the latest 20 commits
 alias hist='git log --pretty=format:\"%Cred%ad %Cgreen%h %Creset| %Cblue[%an] %Creset%s%Cgreen%d\" --graph --date=short'
 
+# git flow
+alias gf='git flow'
+alias gff='git flow feature'
+alias gfh='git flow hotfix'
+alias gfr='git flow release'
+
 # resolve package-lock.json conflict
 alias solvePackageLock='function() {git reset -- package-lock.json && rm package-lock.json && npm install && git add package-lock.json}'
 
