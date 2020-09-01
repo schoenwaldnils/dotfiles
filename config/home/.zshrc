@@ -5,6 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 export EDITOR=code
 export LC_ALL=en_US.UTF-8
 
+ZSH_DISABLE_COMPFIX=true
+
 ################################################################################
 # zsh
 unsetopt RM_STAR_SILENT
@@ -16,6 +18,8 @@ setopt hist_ignore_all_dups
 
 ################################################################################
 # oh-my-zsh
+
+source $ZSH/custom/plugins/zsh-git-prompt/zshrc.sh
 
 plugins=(git node npm github z zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search)
 ZSH_THEME="schoenwaldnils"

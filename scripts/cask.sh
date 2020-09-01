@@ -25,6 +25,7 @@ brew install gitin
 
 
 brew cask install 1password
+brew cask install android-studio
 brew cask install bartender
 brew cask install cyberduck
 brew cask install discord
