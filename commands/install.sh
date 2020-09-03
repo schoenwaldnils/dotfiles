@@ -58,7 +58,6 @@ echo "Installing zsh-history-substring-search"
 git clone git://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 
 
-
 # *************************************
 # oh-my-zsh config files
 #

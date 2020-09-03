@@ -73,7 +73,6 @@
 [difftool "p4mergetool"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
 
-
 [push]
   # Use the Git 1.x.x default to avoid errors on machines with old Git
   # installations. To use `simple` instead, add this to your `~/.extra` file:
@@ -81,6 +80,9 @@
   default = current
   # Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+
+[pull]
+  rebase = false
 
 [clean]
   requireForce = false

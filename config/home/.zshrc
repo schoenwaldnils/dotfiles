@@ -19,9 +19,7 @@ setopt hist_ignore_all_dups
 ################################################################################
 # oh-my-zsh
 
-source $ZSH/custom/plugins/zsh-git-prompt/zshrc.sh
-
-plugins=(git node npm github z zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search)
+plugins=(git git-flow node npm github z zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search git-prompt)
 ZSH_THEME="schoenwaldnils"
 
 # Customize history
