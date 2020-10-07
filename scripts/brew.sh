@@ -41,7 +41,7 @@ brew_install_or_upgrade mas
 mas install 937984704 # Amphetamine
 mas install 1116599239 # Nord VPN
 mas install 803453959 # Slack
-mas install 413857545 # Divvy
+# mas install 413857545 # Divvy
 mas install 425424353 # The Unarchiver
 mas install 1278508951 # Trello
 mas install 585829637 # Todoist

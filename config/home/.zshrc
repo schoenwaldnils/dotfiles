@@ -24,8 +24,13 @@ ZSH_THEME="schoenwaldnils"
 
 # Customize history
 HIST_STAMPS="yyyy-mm-dd"
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
 
 source $ZSH/oh-my-zsh.sh
+source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ################################################################################
 # iterm
