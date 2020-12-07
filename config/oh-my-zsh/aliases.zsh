@@ -134,3 +134,7 @@ alias freewifi="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:
 function touchp() {
   mkdir -p "$(dirname "$1")/" && touch "$1"
 }
+
+# vlc screen sharing window
+
+alias vlcscreen="vlc --no-video-deco --no-embedded-video --screen-fps=20 --screen-top=25 --screen-left=1138 --screen-width=3129 --screen-height=1415 screen://"
