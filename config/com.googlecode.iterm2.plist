@@ -140,9 +140,9 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/repos/schoenwaldnils</string>
+	<string>~/repos/schoenwaldnils/dotfiles/config</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{799, 448}</string>
+	<string>{856, 683}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -185,9 +185,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>320 321 799 448 0 0 1440 877 </string>
+	<string>3076 469 856 683 0 0 5120 1415 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 877 0 0 1440 877 </string>
+	<string>4267 0 850 1415 0 0 5120 1415 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -931,20 +931,16 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {5120, 1440}}</string>
 		<key>topLeft</key>
-		<string>{398, 710}</string>
+		<string>{2238, 1112}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
-	<string>2682EE51-9E1F-4090-9204-D30B6FB407FD</string>
+	<string>863EB370-A326-4D38-B155-8F0184704C7A</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>9</integer>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<integer>6</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>620762579.69738805</real>
+	<real>624010914.15733397</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
 	<key>NoSyncRecordedVariables</key>
@@ -1596,14 +1592,6 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.jobPid</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
 				<string>id</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1726,7 +1714,7 @@
 		</array>
 	</dict>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
-	<real>620589779.69723296</real>
+	<real>623838114.15711999</real>
 	<key>NumberOfLinesForAccessibility</key>
 	<integer>2000</integer>
 	<key>OnlyWhenMoreTabs</key>
@@ -1769,11 +1757,13 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/n/repos/schoenwaldnils/dotfiles/config</string>
+	<string>/Users/nils/repos/schoenwaldnils/dotfiles/config</string>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<true/>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -1781,11 +1771,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final_new.xml?shard=0</string>
+	<string>https://iterm2.com/appcasts/final_new.xml?shard=60</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-09-08T13:59:45Z</date>
+	<date>2020-10-08T08:26:00Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
