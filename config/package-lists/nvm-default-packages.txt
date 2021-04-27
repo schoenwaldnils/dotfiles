@@ -1,9 +1,2 @@
-git-recall
 http-server
-imagemin-cli
-live-server
-manage-wifi-cli
-wifi-password-cli
-trash-cli
 npm-check
-carbon-now-cli

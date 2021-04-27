@@ -47,30 +47,8 @@ alias chrome='open -a "/Applications/Google Chrome.app" --args --force-renderer-
 alias chromeDebug='chrome --remote-debugging-port=9222'
 
 # npm stuff
-alias ni='npm install'
-alias nis='npm install --save'
-alias nid='npm install --save-dev'
-alias nig='npm install --global'
-alias ns='npm start'
-alias nt='npm test'
-alias nit='npm install && npm test'
-alias nk='npm link'
-alias nr='npm run'
 alias npm-reset='rm -rf node_modules && rm -f package-lock.json && npm install && npx node-notifier-cli -t "Done" -m "npm modules reinstalled" -s Glass -i https://cdn.rawgit.com/npm/logos/31945b5c/npm%20square/n-64.png'
 alias dnm='rm -rf node_modules && npm i'
-
-
-# git handling
-clone() {
-  git clone $1
-  cd $(basename ${1%.*})
-  if test -f "./package.json"; then
-    echo "..."
-    echo "Found package.json... installing dependencies"
-    echo "..."
-    npm install
-  fi
-}
 
 alias g='git'
 alias gc='git commit -m'
@@ -107,6 +85,10 @@ alias gfr='git flow release'
 # resolve package-lock.json conflict
 alias solvePackageLock='function() {git reset -- package-lock.json && rm package-lock.json && npm install && git add package-lock.json}'
 
+alias mv="mv -iv"
+alias cp="cp -iv"
+alias mkdir="mkdir -v"
+
 alias cleanbranches='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
 # QR
@@ -130,11 +112,5 @@ alias ping='ping -c 5'      # Pings with 5 packets, not unlimited
 # MAC adress changer (free wifi hack)
 alias freewifi="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
 
-# create files in subfolders
-function touchp() {
-  mkdir -p "$(dirname "$1")/" && touch "$1"
-}
-
 # vlc screen sharing window
-
 alias vlcscreen="vlc --no-video-deco --no-embedded-video --screen-fps=20 --screen-top=25 --screen-left=1138 --screen-width=3129 --screen-height=1415 screen://"

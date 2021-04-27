@@ -10,47 +10,58 @@ echo ""
 ROOT_DIR=$1
 
 echo "installing VSCode"
-brew cask uninstall --force visual-studio-code && brew cask install visual-studio-code
+brew uninstall --cask --force visual-studio-code && brew install --cask visual-studio-code
+brew uninstall --cask --force visual-studio-code-insiders && brew install --cask visual-studio-code-insiders
 
+
+brew tap homebrew/cask-versions
 
 echo "installing custom fonts"
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
-brew cask install font-oswald
+brew install --cask font-fira-code
+brew install --cask font-oswald
+brew install --cask font-ubuntu
 # contentful slide font
-brew cask install font-muli
+brew install --cask font-muli
 
 brew tap jeroenknoops/tap
 brew install gitin
 
 
-brew cask install 1password
-brew cask install android-studio
-brew cask install bartender
-brew cask install cyberduck
-brew cask install discord
-brew cask install dropshare
-brew cask install firefox
-brew cask install google-chrome
-brew cask install google-photos-backup-and-sync
-brew cask install istat-menus
-brew cask install iterm2
-brew cask install kap
-brew cask install keycastr
-brew cask install logitech-presentation
-brew cask install namechanger
-brew cask install ngrok
-brew cask install parallels
-brew cask install rocket
-brew cask install scroll-reverser
-brew cask install sketch
-brew cask install skype
-brew cask install sourcetree
-brew cask install spotify
-brew cask install teamviewer
-brew cask install telegram
-brew cask install tripmode
-brew cask install unified-remote
-brew cask install vlc
-brew cask install whatsapp
-brew cask install zoomus
+brew install --cask 1password
+brew install --cask android-studio
+brew install --cask bartender
+brew install --cask brave-browser
+brew install --cask choosy
+brew install --cask cyberduck
+brew install --cask discord
+brew install --cask dropshare
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask google-photos-backup-and-sync
+brew install --cask istat-menus
+brew install --cask iterm2
+
+# install iterm utilities right away
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+
+brew install --cask kap
+brew install --cask keycastr
+brew install --cask logitech-presentation
+brew install --cask monitorcontrol
+brew install --cask namechanger
+brew install --cask ngrok
+brew install --cask parallels
+brew install --cask rocket
+brew install --cask scroll-reverser
+brew install --cask sketch
+brew install --cask skype
+brew install --cask sourcetree
+brew install --cask spotify
+brew install --cask teamviewer
+brew install --cask telegram
+brew install --cask tripmode
+brew install --cask unified-remote
+brew install --cask vlc
+brew install --cask whatsapp
+brew install --cask zoomus
